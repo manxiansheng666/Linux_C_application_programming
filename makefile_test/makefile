@@ -8,5 +8,6 @@ $(target):$(obj)
 %.o:%.c
 	gcc $< -c
 
+.PHONY:clean
 clean:
 	rm $(target) $(obj) -rf
